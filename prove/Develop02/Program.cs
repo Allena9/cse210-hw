@@ -21,5 +21,9 @@ class Program
             string message = entry.ConvertToString();
             Console.WriteLine(message);
         }
+
+        Prompts prompt = new Prompts();
+        Console.WriteLine(prompt.GetRandomPrompt());
+        
     }
 }
