@@ -7,14 +7,19 @@ class Entry
     public string response;
     public string date;
 
+    public Entry()
+    {
+        Prompts prompt = new Prompts();
+        this.prompt = prompt.GetRandomPrompt();
+    }
+    //Converts all inputs into a single string
     public string ConvertToString()
     {
         return $"{date}\n{prompt}\n{response}\n";
     }
-
-    public void Hold(string prompt, string response, string date)
+    //Saves a response into an entry object
+    public void Hold(string response, string date)
     {
-        this.prompt = prompt;
         this.response = response;
         this.date = date; 
     }
