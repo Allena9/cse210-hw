@@ -30,6 +30,11 @@ class Program
     //Test for GetRandomPrompt function
         Prompts prompt = new Prompts();
         Console.WriteLine(prompt.GetRandomPrompt());
+
+    // Test the store and read function
+        Store store = new Store();
+        store.store();
+        store.read();
         
         
 
