@@ -23,7 +23,7 @@ public class Activity
     public void DisplayStartingMessage()
     {
         Console.Clear();
-        Console.WriteLine($"Welcome to the {_name}.");
+        Console.WriteLine($"Welcome to the {_name} Activity.");
         Console.WriteLine();
 
         Console.WriteLine($"{_description}");
