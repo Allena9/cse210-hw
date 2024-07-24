@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Foundation3 World!");
+        Coordinator cordinator = new();
+
+        cordinator.DisplayEvents();
     }
+
 }
